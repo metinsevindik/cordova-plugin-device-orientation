@@ -50,10 +50,11 @@
             </feature>
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+      <!-- Bu özellik kullanılmıyor ama izinler içinde bulunduğundan Play Store uygulamayı yayınlamayı reddediyor. Bu yüzden kaldırılmıştır. -->
+	    <!-- <config-file target="AndroidManifest.xml" parent="/*">
+	        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-        </config-file>
+        </config-file> -->
 
         <source-file src="src/android/CompassListener.java" target-dir="src/org/apache/cordova/deviceorientation" />
     </platform>
